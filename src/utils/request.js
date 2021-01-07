@@ -9,7 +9,7 @@ axios.defaults.retryDelay = 1000;
 
 // 创建axios实例
 const service = axios.create({
-    baseURL: 'http://localhost:9090' + '/api' , // api 的 base_url
+    baseURL: 'http://server:9090' + '/api' , // api 的 base_url
     timeout: 15000,// 请求超时时间
 });
 

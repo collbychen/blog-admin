@@ -17,7 +17,7 @@ module.exports = {
         open: true,
         proxy: {
             '/api': {
-                target: 'http://localhost:9090',  //目标接口域名
+                target: 'http://server:9090',  //目标接口域名
                 changeOrigin: true,  //是否跨域
                 pathRewrite: {"^/api" : ""}
             }
