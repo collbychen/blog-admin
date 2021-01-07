@@ -32,6 +32,7 @@
           登录
         </el-button>
       </el-form-item>
+      <a href="http://server:9090/api/global">测试</a>
     </el-form>
   </div>
 </template>
