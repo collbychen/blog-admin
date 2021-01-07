@@ -1,0 +1,18 @@
+version: '3'
+services:
+  admin:
+    image: admin:1.00
+    container_name: admin
+    restart: always
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    ports:
+      - "3100:3100"
+    #    expose:
+    #      - "3100"
+
+networks:
+  default:
+    external:
+      name: blog
